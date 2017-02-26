@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />  
+<body>
+<h1>英超新闻</h1>
+<ul>
+	<li><a href="http://bbs.hupu.com/18580516.html">穆里尼奥接触内马尔试图今夏将其签下</a></li>
+	<li><a href="http://bbs.hupu.com/18572420.html">穆里尼奥：我被切尔西解雇相比拉涅利不值一提</a> </li>
+	<li><a href="http://bbs.hupu.com/18572832.html">孔蒂：乐于面对冠军主帅第二年下课的风险</a>
+</li>
+</ul>
+
+
+	<h1>穆里尼奥：我被切尔西解雇相比拉涅利不值一提 </h1>
+	<h2>虎扑足球2月24日讯 曼联主帅穆里尼奥认为，莱斯特城球员的“自私自利”导致了拉涅利的下课。</h2>
+	“这个赛季就以典型的自私自利开始，有人想着新合同，有人想着离开，有人想着更多的钱，有人忘了是谁将他们带到了这个水平上。但这不仅限于足球，我认为这也有点像我们的世界，可能也是你们的世界。
+“我在切尔西也经历了类似遭遇，但发生在我身上的事相比发生在拉涅利身上的简直是小巫见大巫。我衣服上的名字（CR）代表了他的名字（克劳迪奥-拉涅利），这表达了我的一个小小的敬意——对一位在比赛中书写下最美丽历史的教练。他们的球场值得以他的名字命名，而他却被解雇了。<br/>“现在，他们依旧处在大家的关注焦点上，因为这件事每个人都很难接受。两个赛季他们都创造了历史，第一个赛季是因为他们拿了冠军，第二个赛季是因为这个决定。认清现在的足球世界很重要，我们要适应它。有些原则不起作用了，我真的很遗憾。<br/>“上赛季，当我以冠军身份被解雇时，我觉得那是件重大的又带来很坏影响的事，现在我意识到，相比拉涅利，这都是小事。”<br/>
+<img src="https://c1.hoopchina.com.cn/uploads/star/event/images/170224/bmiddle-216bb5e5040fd408a4c6f74e7bc4df4552fab30f.jpg?x-oss-process=image/resize,w_800/format,webp"><br/>
+<a href="http://www.telegraph.co.uk/football/2017/02/24/claudio-ranieri-sacked-leicester-city-will-replace-latest/">来源</a>
+<table border="2">
+<tr>
+	<th colspan="3">我是个表格，不要问我为什么是表格，因为我是个表格</th>
+    </tr>
+<tr>
+	<td>我是第一列</td>
+    <td>我是第二列</td>
+    <td>我是第三列</td>
+    </tr>
+<tr>
+	<td><a href="#top" target="_self">苟</a></td>
+    <td><a href="#top" target="_self">利</a></td>
+    <td><a href="#top" target="_self">锅</a></td>
+    </tr>
+<tr>
+	<td colspan="3">加</td>
+	</tr>
+	登录<br />
+<form name="index" id="index" action="index.html">
+用户名：<input type="text" name="username" id="username" /><br />
+密码：<input type="password" name="pwd" id="pwd" /><br />
+<input type="button" value="登录" /><br />
+<input type="radio" value="生" name=imshagua checked/>生<br />
+<input type="radio" value="四" name=imshagua />四<br />
+<br />
+<input type="checkbox" value="起因" name="so im shagua" />祸福<br />
+<input type="checkbox" value="避" name="im very shagua" />趋之！<br />
+<select name="mo">
+<option value="敢">恶鬼</option>
+<option value="正">高下</option>
+<option value="不想">妖王</option>
+<option value="让">村分</option>
+</select>
+<textarea rows="5" cols="50">
+</textarea>
+<input type=submit>
+<input type=reset>
+
+</form>
+</table>
+</body>
