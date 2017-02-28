@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <meta charset="utf-8">
+    <title>task3</title>
+</head>
+<style type="text/css">
+    body {
+    padding: 20px;
+    margin: 0;
+    font-family: "Microsoft YaHei "
+    font-size: 15px;
+}
+.teamname{
+	background-color: #eee;
+	margin: 0 auto;
+     padding: 20px;
+     background: #eee;
+     border: 0.5px solid #999;
+     overflow: auto;
+     min-width: 500px;
+ }
+.left{
+	float: left;
+	padding: 20px;
+    background-color: #eee;
+    width: 200px;
+    border: 0.5px solid #999;
+}
+.logo{
+	float: left;
+}
+.name{
+	width: 160px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.right{
+  width: 120px;
+  float: right;
+  background: #fff;
+  border: 0.5px solid #999;
+}
+.memberlogo{
+  background: #fff;
+  display: block;
+  margin: 20px;
+  border: 0.5px solid #999;
+}
+.middle{
+  padding: 20px;
+  margin-left: 250px;
+  margin-right: 160px;
+  background: #fff;
+  border: 0.5px solid #999;
+
+}
+</style>
+<body>
+	<div class="teamname">
+		<div class="left">
+		<img class="logo" src="img/logo.jpg" width="80px" height="80px">
+		<div class="name">法拉利重生</div>
+	</div>
+	<div class="right">
+	<img class="memberlogo" src="img/1.jpg" width="80px" height="80px">
+	</div>
+	<div class="middle">
+		<h2>法拉利重生</h2>
+		<h3>团队介绍</h3>
+		<p>
+			队名“法拉利重生”来自F1中多年雷声大雨点小的法拉利车队，希望2017年法拉利能够争夺最高领奖台，也希望自己能够重生。
+		</p>
+		<p>我们是来自天津大学化工学院的大三学生，对前端有浓厚的兴趣，想通过参加这次技术培训，多学习些前端的知识。</p>
+	</div>
+	</div>
+</body>
+</html>
