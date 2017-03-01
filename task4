@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>task4</title>
+	<style type="text/css">
+		    body,div{
+            margin: 0px;
+            padding: 0px;
+        }
+        .center{
+            width: 400px;
+            height: 200px;
+            background: #CCC;
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-top: -100px;
+            margin-left: -200px;
+        }
+        .left{
+            width: 50px;
+            height: 50px;;
+            border-bottom-right-radius: 50px;
+            background: #fc0;
+        }
+        .right{
+            width: 50px;
+            height: 50px;
+            border-top-left-radius: 50px;
+            background: #fc0;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+	</style>
+</head>
+<body>
+  <div class="center">
+  	<div class="left"></div>
+  	<div class="right"></div>
+  </div>
+</body>
+</html>
