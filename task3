@@ -39,7 +39,7 @@
 
 }
 .right{
-  width: 120px;
+  width: 80px;
   float: right;
   background: #fff;
   border: 0.5px solid #999;
