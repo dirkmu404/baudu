@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8"></meta>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<style type="text/css">
+	body,div,p,h1,h2,img,ul,li,figure,table,form{
+	margin: 0;
+	padding: 0;
+	}
+	header{
+		background-color: #333333;
+	}
+a,h1,h2,p,td,figcaption{
+	font-family:"microsoft yahei",sans-serif;
+	font-size: 14px;
+	line-height: 2em;
+}
+.article,.sidebar {
+	 margin: 0 auto;
+	 margin: 20px;
+	 padding: 20px;
+	 background: #FFF ;
+	 box-shadow: 0 2px 2px 0;
+}
+
+body {
+	background: #EEE;
+	min-width: 800px;
+}
+
+div#sidebar {
+	width: 300px;
+	float: right;
+
+}
+
+
+div.content {
+	width: calc(100% - 380px);
+	min-width: 400px;
+	float: left;
+}
+
+
+/*头部*/
+
+
+header {
+	margin:0;
+	background-color: #333333
+	width: 100%;
+	height: 96px;
+	overflow: hidden;
+}
+header .a {
+	text-decoration: none;
+	font-size: 14px;
+	 }
+header .logo{
+	display: block;
+	float: left;
+	max-height: 48px;
+	margin: 10px 40px 3px 40px;
+}
+.header-nav {
+	
+	float: right;
+	display: inline-block;
+	list-style: disc;
+	}
+.header-nav li {
+	float: left;
+}
+.header-nav li a{
+	display:block;
+	line-height:96px;
+	padding:0 1em;
+	text-decoration: none;
+	text-align:center;
+	color: #FFF;
+}
+
+/*正文*/
+
+
+h1 {
+	font-size: 2em;
+	line-height: 3em;
+}
+h2 {
+	font-size: 1.2em;
+	line-height: 3em;
+}
+.span-author {
+	font-size: 0.9em;
+	line-height: 3em;
+	color: #999;
+}
+.passage p {
+	text-indent: 2em;
+}
+.articleList ul {
+	list-style: none;
+	 margin: 1em 2em;
+	}
+
+
+picture {
+	padding:10px 0px;
+	border: 1px dotted;
+	width: 200px;
+	line-height: 1em;
+	 text-align: center;
+	 margin: 20px;
+}
+
+/*图片栏*/
+
+figure{
+		overflow: hidden;
+}
+
+picture {
+	float: left;
+	display: block;
+	padding:10px 0px;
+	border: 1px dotted;
+	width: 150px;
+	line-height: 1em;
+	 text-align: center;
+	 margin: 10px;
+
+}
+figure img {
+	display:block;
+	 width: 80%;
+	 margin:10px auto;
+	}
+
+ol li {
+	margin-left: 2em;
+}
+
+table {
+	margin:0;
+	width: 100%;
+}
+th {
+	background: #000;
+	color: #FFF;
+}
+th#sum {
+	background: #AAA;
+	color: #000;
+}
+
+/*表格*/
+
+table.p2 {
+	margin:0;
+	width: 100%;
+}
+
+table.p2, table.p2 th, table.p2 td{
+	border: 1px solid #000;
+	border-collapse:collapse;
+}
+
+table.p2 th {
+	background: #000;
+	color: #FFF;
+	
+}
+table.p2 th#sum {
+	background: #AAA;
+	color: #000;
+}
+table.p2 th,table.p2 td {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+
+
+div#sidebar{
+	margin: 0 auto;
+	margin:20px 20px 0 20px; 
+	overflow: hidden;
+}
+
+/*侧边栏*/
+
+
+
+div#sidebar td,th{
+	font-size: 10px;
+}
+
+
+div#sidebar h1 {
+	font-size: 16px;
+	padding-left: 1em;
+	line-height:2em;
+	border-left: 5px solid #AAA;
+	}
+
+
+input#submit{
+	/*display: block;*/
+	/*padding: 20px;*/
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: #05D;
+	color:#FFF; 
+	width: 50px;
+	line-height: 50px;
+}
+
+table.side{
+	margin: 0 auto;
+	/*border: 1px solid;*/
+}
+
+table.side td{
+	width: 50%;
+	/*border: 1px solid;*/
+}
+
+
+table.side td.name {
+	text-align: right;
+}
+
+table.side td.tips{
+	color: #AAA;
+}
+
+table.side td.name{
+	vertical-align: top;
+}
+
+table.side td textarea{
+	height: 6em;
+}
+
+
+
+
+input#submit{
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10px;
+	background-color: #05D;
+	color:#FFF; 
+	line-height: 40px;
+
+	width: 100%;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+
+div#footbar{
+	padding:50px;
+	color: #FFF;
+	background:#000;
+	text-align: center;
+	clear: both;
+
+}
+
+</style>
+<body>
+
+		
+
+		<header>
+	<img class="logo" src="https://image.baidu.com/search/down?tn=download&word=download&ie=utf8&fr=detail&url=https%3A%2F%2Ftimgsa.baidu.com%2Ftimg%3Fimage%26quality%3D80%26size%3Db9999_10000%26sec%3D1488255080916%26di%3D9f51060d74608b838088bf5e182d4b03%26imgtype%3D0%26src%3Dhttp%253A%252F%252Fpic.58pic.com%252F58pic%252F14%252F70%252F33%252F85r58PICbyd_1024.jpg&thumburl=https%3A%2F%2Fss3.bdstatic.com%2F70cFv8Sh_Q1YnxGkpoWK1HF6hhy%2Fit%2Fu%3D2519388919%2C2409082434%26fm%3D23%26gp%3D0.jpg">
+<nav>
+	<ul class="header-nav">
+		<li><a href="#nav-link-1">导航链接1</a></li>
+		<li><a href="#nav-link-2">导航链接2</a></li>
+		<li><a href="#nav-link-3">导航链接3</a></li>
+		<li><a href="#nav-link-4">导航链接4</a></li>
+	</ul>
+</nav>
+<div style="clear:both"></div>
+</header>
+
+<div class="content">	
+		<div class="passage">
+			<h1 class="title1">穆里尼奥：我被切尔西解雇相比拉涅利不值一提</h1>
+			
+			<h2 class="title2">曼联主帅穆里尼奥认为，莱斯特城球员的“自私自利”导致了拉涅利的下课。</h2>
+			
+			<span id="author">虎扑足球 2月24日讯</span>
+			
+			<p>这个赛季就以典型的自私自利开始，有人想着新合同，有人想着离开，有人想着更多的钱，有人忘了是谁将他们带到了这个水平上。<br/>但这不仅限于足球，我认为这也有点像我们的世界，可能也是你们的世界。
+            “我在切尔西也经历了类似遭遇，但发生在我身上的事相比发生在拉涅利身上的简直是小巫见大巫。</br>我衣服上的名字（CR）代表了他的名字（克劳迪奥-拉涅利），这表达了我的一个小小的敬意——对一位在比赛中书写下最美丽历史的教练。他们的球场值得以他的名字命名，而他却被解雇了。<br/>“现在，他们依旧处在大家的关注焦点上，因为这件事每个人都很难接受。两个赛季他们都创造了历史，第一个赛季是因为他们拿了冠军，第二个赛季是因为这个决定。认清现在的足球世界很重要，我们要适应它。有些原则不起作用了，我真的很遗憾。<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>“上赛季，当我以冠军身份被解雇时，我觉得那是件重大的又带来很坏影响的事，现在我意识到，”<strong>相比拉涅利，这都是小事。</strong>有些原则不起作用了，我真的很遗憾。</p>
+
+			<img src=https://c1.hoopchina.com.cn/uploads/star/event/images/170224/bmiddle-216bb5e5040fd408a4c6f74e7bc4df4552fab30f.jpg?x-oss-process=image/resize,w_800/format,webp"><br/>
+
+			<a href="http://ife.baidu.com" target="_blank">这里有一个点击后打开新窗口链接连接到http://ife.baidu.com</a>
+			<a href="http://www.telegraph.co.uk/football/2017/02/24/claudio-ranieri-sacked-leicester-city-will-replace-latest/">来源</a>">		
+		</div>
+
+
+
+		<div class="passage">
+			<h1 class="title1">另一篇文章一级标题</h1>
+			
+			<h2 class="title2">文章二级标题</h2>	
+
+			<span id="author">文章作者 文章发表时间</span>
+
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />
+			
+			这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接连接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+
+			<img src="https://c2.hoopchina.com.cn/uploads/star/event/images/170228/bmiddle-b919acd59857c14371574f6676c1accfc02dbabb.jpg?x-oss-process=image/resize,w_800/format,webp">
+			<ul id="passageList">
+				<li>列表项目一</li>
+				<li>列表项目二</li>
+				<li>列表项目三</li>
+			</ul>
+		</div>
+
+
+		<div class="passage">
+
+			<h1 class="title1">图片</h1>
+			
+			<figure>
+				<picture>好看的图片<img src="https://c2.hoopchina.com.cn/uploads/star/event/images/170228/bmiddle-b919acd59857c14371574f6676c1accfc02dbabb.jpg?x-oss-process=image/resize,w_800/format,webp"/></picture>
+				<picture>好看的图片<img src="https://c2.hoopchina.com.cn/uploads/star/event/images/170228/bmiddle-b919acd59857c14371574f6676c1accfc02dbabb.jpg?x-oss-process=image/resize,w_800/format,webp"/></picture>
+				<picture>好看的图片<img src="https://c2.hoopchina.com.cn/uploads/star/event/images/170228/bmiddle-b919acd59857c14371574f6676c1accfc02dbabb.jpg?x-oss-process=image/resize,w_800/format,webp"/></picture>
+				<picture>好看的图片<img src="https://c2.hoopchina.com.cn/uploads/star/event/images/170228/bmiddle-b919acd59857c14371574f6676c1accfc02dbabb.jpg?x-oss-process=image/resize,w_800/format,webp"/></picture>
+				<picture>好看的图片<img src="https://c2.hoopchina.com.cn/uploads/star/event/images/170228/bmiddle-b919acd59857c14371574f6676c1accfc02dbabb.jpg?x-oss-process=image/resize,w_800/format,webp"/></picture>
+				<picture>好看的图片<img src="https://c2.hoopchina.com.cn/uploads/star/event/images/170228/bmiddle-b919acd59857c14371574f6676c1accfc02dbabb.jpg?x-oss-process=image/resize,w_800/format,webp"/></picture>
+				<picture>好看的图片<img src="https://c2.hoopchina.com.cn/uploads/star/event/images/170228/bmiddle-b919acd59857c14371574f6676c1accfc02dbabb.jpg?x-oss-process=image/resize,w_800/format,webp"/></picture>
+				<picture>好看的图片<img src="https://c2.hoopchina.com.cn/uploads/star/event/images/170228/bmiddle-b919acd59857c14371574f6676c1accfc02dbabb.jpg?x-oss-process=image/resize,w_800/format,webp"/></picture>
+				<picture>好看的图片<img src="https://c2.hoopchina.com.cn/uploads/star/event/images/170228/bmiddle-b919acd59857c14371574f6676c1accfc02dbabb.jpg?x-oss-process=image/resize,w_800/format,webp"/></picture>
+			</figure>
+		</div>
+
+
+		<div class="passage">
+
+			<h1 class="title1">最后一篇文章一级标题</h1>
+			
+			<h2 class="title2">文章二级标题</h2>	
+
+			<span id="author">文章作者 文章发表时间</span>
+
+			<ol>
+				<li>排名1</li>
+				<li>排名2</li>
+				<li>排名3</li>
+			</ol>
+
+			<p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
+
+			<table class="p2">
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				</tr>
+					<th id="sum">总计</th>
+					<th id="sum" colspan="2">1000</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+
+	<div id="sidebar">
+		<h1>这里以后是一个侧栏，这是侧栏的标题</h1>
+		
+		<table class="side">	
+			<tr>	
+				<td class="name">
+					请输入邮箱地址：
+				</td>
+				<td class="value">
+					<input type="text" name="address" value="这是一个文本输入框" />
+				</td>
+			</tr>
+			<tr>
+				<td class="tipsName"></td>
+				<td class="tips">邮箱地址请按照要求格式输入</td>
+			</tr>
+			<tr>
+				<td class="name">
+					请输入密码：
+				</td>
+				<td class="value">
+					<input name="password" type="password" value="这是一个文本输入框" />
+				</td>
+			</tr>
+			<tr>
+				<td class="name">
+					请重复输入密码：
+				</td>
+				<td class="value">
+					<input name="password" type="password" value="这是一个文本输入框" />
+				</td>
+			</tr>
+			<tr>
+				<td class="tipsName"></td>
+				<td class="tips">密码请为6-16位英文数字</td>
+			</tr>
+			<tr>
+				<td class="name">
+					性别：
+				</td>
+				<td class="value">
+					<input type="radio" name="sex" value="male" />男
+					<input type="radio" name="sex" value="female" />女
+				</td>
+			</tr>
+			<tr>
+				<td class="name">
+					城市：
+				</td>
+				<td class="value">
+					<select name="city">
+				      <option value="beijing">北京</option>
+                      <option value="shanghai">上海</option>
+                      <option value="guangzhou">广州</option>
+                      <option value="shenzhen">深圳</option>
+				      <option value="not-all">其他</option>
+				   	</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="name">
+					爱好：
+				</td>
+				<td class="value">
+					<input type="checkbox" name="hobby" value="sports" />运动 
+					<input type="checkbox" name="hobby" value="arts" />艺术 
+					<input type="checkbox" name="hobby" value="tec" />科学
+				</td>
+			</tr>
+			<tr>
+				<td class="name">
+					个人描述：
+				</td>
+				<td class="value">
+					<textarea row=4em>这是一个多行输入框，输入您的个人描述
+					</textarea> 
+				</td>
+			</tr>
+		</table>		
+
+		<input id="submit" type="button" value="确认提交" />
+
+	</div>
+	
+
+	<div id="footbar">
+			版权所有&copy
+	</div>
+</body>
+
+</html>
