@@ -17,13 +17,13 @@ header{
 	font-size: 12px;
 	font-family: "黑体";
 }
-header .redspan{
+header .ife{
 	width: 110px;
 	height: 61px;
 	background-color: red;
 }
 
-header .redspan p{	
+header .ife p{	
 	color: #fff;
 	margin:0;
 	position: absolute;
