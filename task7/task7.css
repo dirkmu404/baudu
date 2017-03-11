@@ -142,7 +142,7 @@ body{
 	width: 1280px;
 	height: 350px;
 	margin: 0 auto;
-	background: url(../images/main-map.jpg) no-repeat;
+	background: url(../images/main_map.jpg) no-repeat;
 	background-size: 100% 100%;
 	overflow: hidden;
 }
@@ -205,7 +205,7 @@ body{
 }
 
 .province li:hover{
-	background: url(../images/map-libg.jpg) no-repeat;
+	background: url(../images/map_libg.jpg) no-repeat;
 	background-size: 100% 100%;
 }
 
@@ -245,7 +245,7 @@ body{
 .newworld_left{
 	width: 66%;
 	height: 566px;
-	background: url(../images/newworld-left.jpg) no-repeat;
+	background: url(../images/newworld_left.jpg) no-repeat;
 	background-size: 100% 100%;
 	float: left;
 }
