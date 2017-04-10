@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--以原始大小显示，并不允许缩放 -->
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <!--"添加到主屏幕“后，全屏显示-->
+    <meta name="apple-touch-fullscreen" content="yes">
+    <!--网站开启对web app 的支持-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <title>task11</title>
+    <!--Autoprefixer自动补齐前缀-->
+    <script>!function (e, t) { function i() { var t = n.getBoundingClientRect().width; t / m > 540 && (t = 540 * m); var i = t / 10; n.style.fontSize = i + "px", d.rem = e.rem = i } var a, r = e.document, n = r.documentElement, o = r.querySelector('meta[name="viewport"]'), l = r.querySelector('meta[name="flexible"]'), m = 0, s = 0, d = t.flexible || (t.flexible = {}); if (o) { console.warn("将根据已有的meta标签来设置缩放比例"); var p = o.getAttribute("content").match(/initial\-scale=([\d\.]+)/); p && (s = parseFloat(p[1]), m = parseInt(1 / s)) } else if (l) { var c = l.getAttribute("content"); if (c) { var u = c.match(/initial\-dpr=([\d\.]+)/), f = c.match(/maximum\-dpr=([\d\.]+)/); u && (m = parseFloat(u[1]), s = parseFloat((1 / m).toFixed(2))), f && (m = parseFloat(f[1]), s = parseFloat((1 / m).toFixed(2))) } } if (!m && !s) { var v = (e.navigator.appVersion.match(/android/gi), e.navigator.appVersion.match(/iphone/gi)), h = e.devicePixelRatio; m = v ? h >= 3 && (!m || m >= 3) ? 3 : h >= 2 && (!m || m >= 2) ? 2 : 1 : 1, s = 1 / m } if (n.setAttribute("data-dpr", m), !o) if (o = r.createElement("meta"), o.setAttribute("name", "viewport"), o.setAttribute("content", "initial-scale=" + s + ", maximum-scale=" + s + ", minimum-scale=" + s + ", user-scalable=no"), n.firstElementChild) n.firstElementChild.appendChild(o); else { var x = r.createElement("div"); x.appendChild(o), r.write(x.innerHTML) } e.addEventListener("resize", function () { clearTimeout(a), a = setTimeout(i, 300) }, !1), e.addEventListener("pageshow", function (e) { e.persisted && (clearTimeout(a), a = setTimeout(i, 300)) }, !1), "complete" === r.readyState ? r.body.style.fontSize = 12 * m + "px" : r.addEventListener("DOMContentLoaded", function (e) { r.body.style.fontSize = 12 * m + "px" }, !1), i(), d.dpr = e.dpr = m, d.refreshRem = i, d.rem2px = function (e) { var t = parseFloat(e) * this.rem; return "string" == typeof e && e.match(/rem$/) && (t += "px"), t }, d.px2rem = function (e) { var t = parseFloat(e) / this.rem; return "string" == typeof e && e.match(/px$/) && (t += "rem"), t } }(window, window.lib || (window.lib = {}));</script>
+    <link rel="stylesheet" href="css/task11.css">
+</head>
+<body style="font-size: 12px;">
+    <div class="container">
+        <header class="header">
+            <a class="header-back" href="#">
+                <b class="iconfont icon-back"></b>
+                <span class="header-back-word">返回</span>
+            </a>
+            <span class="header-title">这是标题</span>
+        </header>
+        <nav class="nav">
+            <div class="nav-item">导航</div>
+            <div class="nav-item active">导航</div>
+            <div class="nav-item">导航</div>
+            <div class="nav-item">导航</div>
+            <div class="nav-item">导航</div>
+        </nav>
+        <section class="banner">
+            <img src="http://vibin.com.cn/baiduife/stage1/images/task11/main.png" width="100%">
+        </section>
+        <section>
+            <div class="tab">
+                <div class="tab-item">
+                    <div class="tab-item-box">
+                        <img src="http://vibin.com.cn/baiduife/stage1/images/task11/book.png" width="100%">
+                    </div>
+                    <span>标签</span>
+                </div>
+                <div class="tab-item">
+                    <div class="tab-item-box">
+                        <img src="http://vibin.com.cn/baiduife/stage1/images/task11/book.png" width="100%">
+                    </div>
+                    <span>标签</span>
+                </div>
+                <div class="tab-item">
+                    <div class="tab-item-box">
+                        <img src="http://vibin.com.cn/baiduife/stage1/images/task11/book.png" width="100%">
+                    </div>
+                    <span>标签</span>
+                </div>
+                <div class="tab-item">
+                    <div class="tab-item-box">
+                        <img src="http://vibin.com.cn/baiduife/stage1/images/task11/book.png" width="100%">
+                    </div>
+                    <span>标签</span>
+                </div>
+                <div class="tab-item">
+                    <div class="tab-item-box">
+                        <img src="http://vibin.com.cn/baiduife/stage1/images/task11/book.png" width="100%">
+                    </div>
+                    <span>标签</span>
+                </div>
+            </div>
+
+            <div class="col">
+                <ul class="col-ul">
+                    <li class="col-ul-item">
+                        <div class="col-ul-item-box">
+                            <img src="http://vibin.com.cn/baiduife/stage1/images/task11/col01.png" height="100%">
+                        </div>
+                        <h3 class="col-ul-item-h3">分栏一</h3>
+                        <h4 class="col-ul-item-h4">分栏小标题</h4>
+                    </li>
+                    <li class="col-ul-item">
+                        <div class="col-ul-item-box">
+                            <img src="http://vibin.com.cn/baiduife/stage1/images/task11/col02.png" height="100%">
+                        </div>
+                        <h3 class="col-ul-item-h3">分栏一</h3>
+                        <h4 class="col-ul-item-h4">分栏小标题</h4>
+                    </li>
+                    <li class="col-ul-item">
+                        <div class="col-ul-item-box">
+                            <img src="http://vibin.com.cn/baiduife/stage1/images/task11/col03.png" height="100%">
+                        </div>
+                        <h3 class="col-ul-item-h3">分栏一</h3>
+                        <h4 class="col-ul-item-h4">分栏小标题</h4>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        <section class="mod">
+            <h2 class="mod-title">模块一
+            </h2>
+            <div class="mod-item">
+                <div class="mod-item-box">
+                    <img src="http://vibin.com.cn/baiduife/stage1/images/task11/mod.png" width="100%" height="100%">
+                </div>
+                <div class="mod-item-column">
+                    <span class="item">这是文案</span>
+                    <span class="item">这是文案</span>
+                </div>
+                <div class="mod-item-column">
+                    <span class="item">这是文案</span>
+                    <span class="item">这是文案</span>
+                </div>
+            </div>
+            <div class="mod-item">
+                <div class="mod-item-box">
+                    <img src="http://vibin.com.cn/baiduife/stage1/images/task11/mod.png" width="100%" height="100%">
+                </div>
+                <div class="mod-item-column">
+                    <span class="item">这是文案</span>
+                    <span class="item">这是文案</span>
+                </div>
+                <div class="mod-item-column">
+                    <span class="item">这是文案</span>
+                    <span class="item">这是文案</span>
+                </div>
+            </div>
+        </section>
+        <section class="mod">
+            <h2 class="mod-title">模块二
+            </h2>
+            <div class="mod-item">
+                <div class="mod-item-box">
+                    <img src="http://vibin.com.cn/baiduife/stage1/images/task11/mod.png" width="100%" height="100%">
+                </div>
+                <div class="mod-item-column">
+                    <span class="item">这是文案</span>
+                    <span class="item">这是文案</span>
+                </div>
+                <div class="mod-item-column">
+                    <span class="item">这是文案</span>
+                    <span class="item">这是文案</span>
+                </div>
+            </div>
+            <div class="mod-item">
+                <div class="mod-item-box">
+                    <img src="http://vibin.com.cn/baiduife/stage1/images/task11/mod.png" width="100%" height="100%">
+                </div>
+                <div class="mod-item-column">
+                    <span class="item">这是文案</span>
+                    <span class="item">这是文案</span>
+                </div>
+                <div class="mod-item-column">
+                    <span class="item">这是文案</span>
+                    <span class="item">这是文案</span>
+                </div>
+            </div>
+        </section>
+        <section class="article">
+            <div class="article-item">
+                <div class="article-item-column">
+                    <div class="image">
+                        <img src="http://vibin.com.cn/baiduife/stage1/images/task11/article.png" width="100%">
+                    </div>
+                    <div class="content">
+                        <h3 class="title">这是文章标题字号是22的文章标题</h3>
+                        <span class="time">文章来源 六分钟前</span>
+                    </div>
+                </div>
+                <div class="article-item-column">
+                    <div class="image">
+                        <img src="http://vibin.com.cn/baiduife/stage1/images/task11/article.png" width="100%">
+                    </div>
+                    <div class="content">
+                        <h3 class="title">这是文章标题字号是22的文章标题</h3>
+                        <span class="time">文章来源 六分钟前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-item">
+                <div class="article-item-column-2">
+                    <h3 class="title">这是文章标题字号是22的文章标题</h3>
+                    <div class="boxes">
+                        <div class="box">
+                            <img src="http://vibin.com.cn/baiduife/stage1/images/task11/article.png" width="100%">
+                        </div>
+                        <div class="box">
+                            <img src="http://vibin.com.cn/baiduife/stage1/images/task11/article.png" width="100%">
+                        </div>
+                        <div class="box">
+                            <img src="http://vibin.com.cn/baiduife/stage1/images/task11/article.png" width="100%">
+                        </div>
+                    </div>
+                    <div class="time">
+                        文章来源 六分钟前
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
