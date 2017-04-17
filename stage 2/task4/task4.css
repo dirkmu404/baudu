@@ -1,0 +1,27 @@
+form {
+  display: inline;
+}
+
+#show-box {
+    height: 80px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#show-box button {
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+
+.queue-ele {
+    margin: 10px;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+    background-color: red;
+    height: 90px;
+    width: 90px;
+}
